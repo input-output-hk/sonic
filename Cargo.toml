@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "protocol",
+    "commitment",
+    "polynomials",
+    "circuits",
+]
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1

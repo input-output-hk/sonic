@@ -1,0 +1,18 @@
+[package]
+name = "circuits"
+version = "0.1.0"
+authors = ["IOHK"]
+edition = "2018"
+
+[dependencies.pairing]
+version = "0.14.2"
+features = ["u128-support"]
+
+[dependencies]
+polynomials = { path = "../polynomials" }
+merlin = "1.1.0"
+rand = "0.4"
+colored = "1.8"
+sprs = "0.6.5"
+bincode = "1.0.1"
+byteorder = "1"
